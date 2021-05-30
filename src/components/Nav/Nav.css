@@ -1,0 +1,65 @@
+.nav-row {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.logo-box {
+  background-color: #756524;
+  height: 116px;
+  opacity: 0.6;
+  width: 174px;
+}
+
+.sign-up {
+  background-color: #000000;
+  color: #c6bc97;
+  flex-grow: 1;
+  height: 41px;
+  opacity: 0.81;
+  /* width: 357px; */
+}
+
+.back-to-basix {
+  background-color: #393939;
+  color: #ffffff;
+  flex-grow: 1;
+  height: 41px;
+  opacity: 1;
+  /* width: 357px; */
+}
+
+.about-nav {
+  background-color: #898989;
+  color: #ffffff;
+  height: 41px;
+  flex-grow: 1;
+  opacity: 0.89;
+  /* width: 357px; */
+}
+
+.free-consultation {
+  background-color: #8f8358;
+  color: #ffffff;
+  height: 41px;
+  flex-grow: 1;
+  opacity: 1;
+  /* width: 174px; */
+}
+
+.member-sign-in {
+  background-color: #000000;
+  color: #ffffff;
+  height: 41px;
+  flex-grow: 1;
+  opacity: 0.81;
+  /* width: 357px; */
+}
+
+.active {
+  height: 116px;
+}
+
+.strong {
+  font-weight: bold;
+}
