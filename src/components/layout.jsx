@@ -10,10 +10,13 @@ import { StaticQuery, graphql } from "gatsby";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-import Header from "./header";
-import Navbar from "./navBar";
+import { Helmet } from "react-helmet";
+import config from "../../data/SiteConfig";
+import Nav from "./Nav/Nav";
+import "@fontsource/roboto";
+// import Navbar from "./navBar";
 
-const Layout = ({ children, pageInfo }) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -24,15 +27,20 @@ const Layout = ({ children, pageInfo }) => (
         }
       }
     `}
-    render={(data) => (
+    render={() => (
       <>
         <Container fluid className="px-0 main">
-          <Row noGutters className="justify-content-center">
+          {/* <Row noGutters className="justify-content-center">
             <Col>
               <Header siteTitle={data.site.siteMetadata.title} />
             </Col>
-          </Row>
-          <Navbar pageInfo={pageInfo} />
+          </Row> */}
+          <Helmet>
+            <meta name="description" content={config.siteDescription} />
+            <html lang="en" />
+            <link rel="stylesheet" href="https://use.typekit.net/bjb4rdi.css" />
+          </Helmet>
+          <Nav />
           <Row noGutters>
             <Col>
               <Container className="mt-5">

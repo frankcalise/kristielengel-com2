@@ -4,6 +4,7 @@
   "version": "2.20.11",
   "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
   "dependencies": {
+    "@fontsource/roboto": "4.4.5",
     "bootstrap": "4.6.0",
     "gatsby": "^3.0.1",
     "gatsby-plugin-catch-links": "^3.0.0",
