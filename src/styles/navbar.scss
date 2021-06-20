@@ -1,7 +1,238 @@
-#site-navbar {
-  background-color: $color-primary;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+// .nav-row {
+//   display: flex;
+//   align-items: flex-end;
+//   width: 100%;
+
+//   @media (max-width: 768px) {
+//     position: sticky;
+//     height: 8vh;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     left: 0;
+//   }
+// }
+
+// .logo-box {
+//   background-color: #756524;
+//   height: 116px;
+//   opacity: 0.6;
+//   width: 174px;
+//   position: relative;
+// }
+
+// .inner {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   overflow: hidden;
+//   width: 174px;
+//   height: 116px;
+// }
+
+// .inner img {
+//   width: auto;
+//   max-width: 100%;
+//   max-height: 116px;
+//   height: auto;
+//   margin: 0 auto;
+//   display: block;
+// }
+
+// .sign-up {
+//   background-color: #000000;
+//   color: #c6bc97;
+//   flex-grow: 1;
+//   height: 41px;
+//   opacity: 0.81;
+//   text-transform: uppercase;
+//   /* width: 357px; */
+// }
+
+// .back-to-basix {
+//   background-color: #393939;
+//   color: #ffffff;
+//   flex-grow: 1;
+//   height: 41px;
+//   opacity: 1;
+//   /* width: 357px; */
+// }
+
+// .about-nav {
+//   background-color: #898989;
+//   color: #ffffff;
+//   height: 41px;
+//   flex-grow: 1;
+//   opacity: 0.89;
+//   /* width: 357px; */
+// }
+
+// .free-consultation {
+//   background-color: #8f8358;
+//   color: #ffffff;
+//   height: 41px;
+//   flex-grow: 1;
+//   opacity: 1;
+//   /* width: 174px; */
+// }
+
+// .member-sign-in {
+//   background-color: #000000;
+//   color: #ffffff;
+//   height: 41px;
+//   flex-grow: 1;
+//   opacity: 0.81;
+//   /* width: 357px; */
+// }
+
+// .active {
+//   height: 116px;
+// }
+
+// .strong {
+//   font-weight: bold;
+// }
+
+.logo-wrap {
+  background-color: #756524;
+  opacity: 0.6;
+  margin: 0 0;
+  flex: 0 1 36px;
+
+  @media (max-width: 768px) {
+    flex: 0 1 25px;
+  }
+
+  img {
+    @media (max-width: 768px) {
+      max-width: 50px;
+    }
+  }
+}
+
+.hamburger {
+  background-color: #111;
+  width: 30px;
+  height: 3px;
+  transition: all 0.3s linear;
+  align-self: center;
+  position: relative;
+  transform: inherit;
+  &.open {
+    transform: rotate(-45deg);
+
+    &::before {
+      transform: rotate(-90deg) translate(-10px, 0px);
+    }
+    &::after {
+      opacity: 0;
+    }
+  }
+
+  &::before,
+  &::after {
+    width: 30px;
+    height: 3px;
+    background-color: #111;
+    content: "";
+    position: absolute;
+    transition: all 0.3s linear;
+  }
+  &::before {
+    transform: rotate(0deg);
+    top: -10px;
+  }
+
+  &::after {
+    opacity: 1;
+    transform: rotate(0deg);
+    top: 10px;
+  }
+}
+
+.toggle {
+  display: none;
+  height: 100%;
+  cursor: pointer;
+  padding: 0 10vw;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.navigation {
+  height: 10vh;
+  display: flex;
+  background-color: #fff;
+  position: relative;
+  justify-content: space-between;
+  text-transform: uppercase;
+  border-bottom: 2px solid #33333320;
+  margin: 0 auto;
+  z-index: 2;
+  align-self: center;
+  @media (max-width: 768px) {
+    position: sticky;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.navbox {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 10vh;
+    background-color: #fff;
+    transition: all 0.3s ease-in;
+    top: 8vh;
+    left: 0;
+
+    &.open {
+      left: -100%;
+    }
+  }
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #111;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0 1vw;
+  transition: all 200ms ease-in;
+  position: relative;
+  :after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: goldenrod;
+    height: 1px;
+    transition: all 0.4s ease-in;
+  }
+  :hover {
+    color: goldenrod;
+    ::after {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 20px 0;
+    font-size: 1.5rem;
+    z-index: 6;
+  }
 }
