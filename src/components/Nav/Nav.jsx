@@ -1,10 +1,15 @@
 import React from "react";
 import "./Nav.css";
+import whiteLogo from "../../images/KL_Logo_WHITE.png";
 
 function Nav() {
   return (
     <div className="nav-row">
-      <div className="logo-box" />
+      <div className="logo-box">
+        <div className="inner">
+          <img src={whiteLogo} alt="KL logo" />
+        </div>
+      </div>
       <div className="sign-up active">
         <p className="strong">sign up</p>
       </div>
