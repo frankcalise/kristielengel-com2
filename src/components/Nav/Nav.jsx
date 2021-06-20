@@ -1,31 +1,46 @@
 import React from "react";
-import "./Nav.css";
-import whiteLogo from "../../images/KL_Logo_WHITE.png";
+import { Link } from "gatsby";
+import Logo from "./Logo";
+
+const Hamburger = ({ open }) => (
+  <div className={`hamburger${open ? "" : " open"}`} />
+);
+
+const Links = () => (
+  <>
+    <Link to="/signup" className="nav-item">
+      Sign Up
+    </Link>
+    <Link to="/back-to-basics" className="nav-item">
+      Back to Basix
+    </Link>
+    <Link to="/about" className="nav-item">
+      About Me
+    </Link>
+    <Link to="/" className="nav-item">
+      Free Consultation
+    </Link>
+    <Link to="/signin" className="nav-item">
+      Member Sign in
+    </Link>
+  </>
+);
 
 function Nav() {
+  const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <div className="nav-row">
-      <div className="logo-box">
-        <div className="inner">
-          <img src={whiteLogo} alt="KL logo" />
-        </div>
+    <div className="navigation">
+      <Logo />
+      <div
+        className="toggle"
+        onClick={() => {
+          setNavbarOpen(!navbarOpen);
+        }}
+      >
+        {navbarOpen ? <Hamburger /> : <Hamburger open />}
       </div>
-      <div className="sign-up active">
-        <p className="strong">sign up</p>
-      </div>
-      <div className="back-to-basix">
-        <p className="strong">back to basix</p>
-      </div>
-      <div className="about-nav">
-        <p className="strong">about me</p>
-      </div>
-      <div className="free-consultation">
-        <p className="strong">free consultation</p>
-      </div>
-      <div className="member-sign-in">
-        <p>
-          <span className="strong">member</span> sign in
-        </p>
+      <div className={`navbox${navbarOpen ? "" : " open"}`}>
+        <Links />
       </div>
     </div>
   );
