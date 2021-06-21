@@ -2,11 +2,15 @@ import React from "react";
 import { Link } from "gatsby";
 import Logo from "./Logo";
 
-const Hamburger = ({ open }) => (
+type HamburgerProps = {
+  open?: boolean;
+};
+
+const Hamburger: React.FC<HamburgerProps> = ({ open }) => (
   <div className={`hamburger${open ? "" : " open"}`} />
 );
 
-const Links = () => (
+const Links: React.FC = () => (
   <>
     <Link to="/signup" className="nav-item">
       Sign Up
@@ -26,7 +30,7 @@ const Links = () => (
   </>
 );
 
-function Nav() {
+const Nav: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <div className="navigation">
@@ -44,6 +48,6 @@ function Nav() {
       </div>
     </div>
   );
-}
+};
 
 export default Nav;
