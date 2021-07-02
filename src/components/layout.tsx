@@ -11,12 +11,20 @@ import { StaticQuery, graphql } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Helmet } from "react-helmet";
-import config from "../../data/SiteConfig";
 import Nav from "./Nav/Nav";
 import "@fontsource/roboto";
-// import Navbar from "./navBar";
+const config = require("../../data/SiteConfig");
 
-const Layout = ({ children }) => (
+type PageInfo = {
+  pageName: string;
+};
+
+type Props = {
+  pageInfo: PageInfo;
+  children: React.ReactNode;
+};
+
+const Layout: React.FC<Props> = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -30,22 +38,16 @@ const Layout = ({ children }) => (
     render={() => (
       <>
         <Container fluid className="px-0 main">
-          {/* <Row noGutters className="justify-content-center">
-            <Col>
-              <Header siteTitle={data.site.siteMetadata.title} />
-            </Col>
-          </Row> */}
           <Helmet>
             <meta name="description" content={config.siteDescription} />
             <html lang="en" />
             <link rel="stylesheet" href="https://use.typekit.net/bjb4rdi.css" />
           </Helmet>
           <Nav />
+          <main>{children}</main>
           <Row noGutters>
             <Col>
-              <Container className="mt-5">
-                <main>{children}</main>
-              </Container>
+              <Container></Container>
             </Col>
           </Row>
         </Container>
