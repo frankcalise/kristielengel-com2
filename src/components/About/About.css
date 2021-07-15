@@ -1,10 +1,10 @@
 .about {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-height: 300px;
+  height: 100%;
+  justify-content: flex-end;
+  padding-bottom: 100px;
 }
 
 .flood-text {
@@ -31,16 +31,38 @@
 
 .about-subtitle {
   margin-top: -40px;
-  text-align: center;
 }
 
 .about-hero-box {
   background: transparent url("../../images/BicycleKick_Hero.png") 0% 0%
     no-repeat padding-box;
   width: 100%;
-  height: 1356px;
+  height: 80vh;
+  position: relative;
 }
 
-.hero-content {
-  margin-top: 300px;
+.fold-bar {
+  background-color: #777777;
+  bottom: 0;
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.fold-container {
+  display: flex;
+  justify-content: center;
+}
+
+.fold-text {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Roboto;
+  text-transform: uppercase;
+}
+
+.mr-xl {
+  margin-right: 100px;
 }
