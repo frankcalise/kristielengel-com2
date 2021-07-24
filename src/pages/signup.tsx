@@ -10,7 +10,7 @@ function AboutPage() {
   return (
     <Layout pageInfo={{ pageName: "index" }}>
       <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
-      <About />
+      <p>sign up</p>
     </Layout>
   );
 }

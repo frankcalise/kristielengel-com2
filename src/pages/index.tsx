@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Container, ListGroup } from "react-bootstrap";
 
-import Layout from "../components/layout";
+import Layout from "../layout";
 import SEO from "../components/seo";
 
 const IndexPage = () => (

@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Nav from "../components/Nav/Nav";
 import "./index.css";
+import "@fontsource/roboto";
 
 const config = require("../../data/SiteConfig");
 
