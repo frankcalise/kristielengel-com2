@@ -1,10 +1,16 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import config from "../../data/SiteConfig";
 import Nav from "../components/Nav/Nav";
 import "./index.css";
+import "@fontsource/roboto";
 
-export default function MainLayout({ children }) {
+const config = require("../../data/SiteConfig");
+
+type Props = {
+  children: React.ReactNode;
+};
+
+const MainLayout: React.FC<Props> = ({ children }) => {
   return (
     <div className="layout-container">
       <Helmet>
@@ -17,4 +23,6 @@ export default function MainLayout({ children }) {
       {children}
     </div>
   );
-}
+};
+
+export default MainLayout;

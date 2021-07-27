@@ -40,51 +40,108 @@
 //   display: block;
 // }
 
-// .sign-up {
-//   background-color: #000000;
-//   color: #c6bc97;
-//   flex-grow: 1;
-//   height: 41px;
-//   opacity: 0.81;
-//   text-transform: uppercase;
-//   /* width: 357px; */
-// }
+.nav-item {
+  color: $color-white;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  transition: all 200ms ease-in;
+  position: relative;
+  :after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    height: 1px;
+    transition: all 0.4s ease-in;
+  }
+  &:hover {
+    color: #fff;
+    ::after {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 20px 0;
+    font-size: 1.5rem;
+    z-index: 6;
+    color: $color-black;
+  }
+  @media (min-width: 769px) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100%;
+    opacity: 0.81;
+    text-transform: uppercase;
 
-// .back-to-basix {
-//   background-color: #393939;
-//   color: #ffffff;
-//   flex-grow: 1;
-//   height: 41px;
-//   opacity: 1;
-//   /* width: 357px; */
-// }
+    span {
+      display: block;
+      padding: 0.5rem 0;
+      text-align: center;
+      flex: 1;
+      font-weight: 500;
+    }
+  }
+}
 
-// .about-nav {
-//   background-color: #898989;
-//   color: #ffffff;
-//   height: 41px;
-//   flex-grow: 1;
-//   opacity: 0.89;
-//   /* width: 357px; */
-// }
+@media (min-width: 769px) {
+  .sign-up {
+    border-bottom: 10px solid #000000;
+    &.active,
+    &:hover,
+    span {
+      background-color: #000000;
+    }
+  }
 
-// .free-consultation {
-//   background-color: #8f8358;
-//   color: #ffffff;
-//   height: 41px;
-//   flex-grow: 1;
-//   opacity: 1;
-//   /* width: 174px; */
-// }
+  .about-nav {
+    border-bottom: 10px solid #898989;
+    &.active,
+    &:hover,
+    span {
+      background-color: #898989;
+    }
+  }
 
-// .member-sign-in {
-//   background-color: #000000;
-//   color: #ffffff;
-//   height: 41px;
-//   flex-grow: 1;
-//   opacity: 0.81;
-//   /* width: 357px; */
-// }
+  .back-to-basix {
+    border-bottom: 10px solid #393939;
+    &.active,
+    &:hover,
+    span {
+      background-color: #393939;
+    }
+  }
+
+  .free-consultation {
+    border-bottom: 10px solid #8f8358;
+    &.active,
+    &:hover,
+    span {
+      background-color: #8f8358;
+    }
+  }
+
+  .member-sign-in {
+    border-bottom: 10px solid #000000;
+    &.active,
+    &:hover,
+    span {
+      background-color: #000000;
+    }
+  }
+}
+
+.active {
+  border-bottom: 10px solid $color-gold;
+  @media (min-width: 769px) {
+    height: 100%;
+  }
+}
 
 // .active {
 //   height: 116px;
@@ -98,10 +155,16 @@
   background-color: #756524;
   opacity: 0.6;
   margin: 0 0;
-  flex: 0 1 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width: 10rem;
 
   @media (max-width: 768px) {
-    flex: 0 1 25px;
+    height: 100%;
+    width: 4rem;
   }
 
   img {
@@ -162,23 +225,27 @@
 }
 
 .navigation {
-  height: 10vh;
+  background-color: $color-white;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  background-color: #fff;
-  position: relative;
+  position: fixed;
+  height: 10rem;
   justify-content: space-between;
   text-transform: uppercase;
-  border-bottom: 2px solid #33333320;
+  // border-bottom: 2px solid #33333320;
   margin: 0 auto;
   z-index: 2;
   align-self: center;
+  width: 100%;
+  background-color: transparent;
   @media (max-width: 768px) {
-    position: sticky;
+    background-color: #fff;
     height: 8vh;
     top: 0;
     left: 0;
     right: 0;
-    left: 0;
   }
 }
 
@@ -202,37 +269,8 @@
       left: -100%;
     }
   }
-}
-
-.nav-item {
-  text-decoration: none;
-  color: #111;
-  display: inline-block;
-  white-space: nowrap;
-  margin: 0 1vw;
-  transition: all 200ms ease-in;
-  position: relative;
-  :after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0%;
-    content: ".";
-    color: transparent;
-    background: goldenrod;
-    height: 1px;
-    transition: all 0.4s ease-in;
-  }
-  :hover {
-    color: goldenrod;
-    ::after {
-      width: 100%;
-    }
-  }
-  @media (max-width: 768px) {
-    padding: 20px 0;
-    font-size: 1.5rem;
-    z-index: 6;
+  @media (min-width: 769px) {
+    display: flex;
+    width: 100%;
   }
 }
