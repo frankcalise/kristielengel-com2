@@ -54,9 +54,9 @@ const Home: React.FC<Props> = () => {
               <span className="hero-sub-text">stop starting over!</span>
               <div className="gray-separator" />
               <span className="message">
-                Kristielengel.com delivers weekly workouts for the busy
-                individual looking to stay healthy in a "balanced" way! Minimal
-                space, time and equipment are needed to...
+                <strong>Kristielengel.com</strong> delivers weekly workouts for
+                the busy individual looking to stay healthy in a "balanced" way!
+                Minimal space, time and equipment are needed to...
               </span>
               <span className="here-now">
                 <span className="gold-text">right here.</span>

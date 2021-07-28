@@ -102,7 +102,7 @@
 
   .hero-sub-text {
     font-family: Roboto;
-    font-size: 2rem;
+    font-size: 3rem;
     color: $color-gold;
     font-weight: 400;
     font-style: normal;
@@ -110,13 +110,13 @@
     text-transform: uppercase;
     letter-spacing: 1.84px;
     font-weight: 900;
+    margin-top: -1rem;
   }
 
   span.message {
     color: #fff;
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 2rem;
     margin-bottom: 2rem;
     width: 65%;
   }
@@ -153,6 +153,6 @@
     background-color: $color-gray;
     height: 0.2rem;
     width: 10rem;
-    margin: 0.5rem 0;
+    margin: 2.5rem 0;
   }
 }
