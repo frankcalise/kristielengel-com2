@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import Slide from "../Slide/Slide";
 
 interface Props {}
@@ -42,6 +42,34 @@ const Home: React.FC<Props> = () => {
             </div>
           </div>
           <div className="right-image" />
+        </div>
+      </Slide>
+
+      <Slide>
+        <div className="back-to-basics-slide">
+          <div>{/* move plays here */}</div>
+          <div>
+            <div className="description">
+              <span className="hero-text">Back to BaSix</span>
+              <span className="hero-sub-text">stop starting over!</span>
+              <div className="gray-separator" />
+              <span className="message">
+                Kristielengel.com delivers weekly workouts for the busy
+                individual looking to stay healthy in a "balanced" way! Minimal
+                space, time and equipment are needed to...
+              </span>
+              <span className="here-now">
+                <span className="gold-text">right here.</span>
+                <span className="white-text">right now.</span>
+              </span>
+              <button
+                className="gold-button"
+                onClick={() => navigate("/signup")}
+              >
+                learn more & sign up
+              </button>
+            </div>
+          </div>
         </div>
       </Slide>
     </div>

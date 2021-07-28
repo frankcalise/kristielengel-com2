@@ -6,19 +6,17 @@ interface Props {
   foldBarText?: React.ReactNode;
 }
 
-const Slide: React.FC<Props> = ({
-  children,
-  foldBarText,
-  foldBarColor = "gray",
-}) => {
+const Slide: React.FC<Props> = ({ children, foldBarText, foldBarColor }) => {
   return (
     <div className="slide-content">
       {children}
       {/* fold bar */}
 
-      <div className={Classnames("fold-bar", foldBarColor)}>
-        <div className="fold-container">{foldBarText}</div>
-      </div>
+      {!!foldBarColor && (
+        <div className={Classnames("fold-bar", foldBarColor)}>
+          <div className="fold-container">{foldBarText}</div>
+        </div>
+      )}
     </div>
   );
 };
