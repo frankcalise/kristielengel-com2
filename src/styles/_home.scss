@@ -1,0 +1,158 @@
+.left-image {
+  background: url("../images/slides/home/left.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  // background-position-y: 40%; // puts arnold in the picture
+}
+
+.center-image {
+  background: url("../images/slides/home/center.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.right-image {
+  background: url("../images/slides/home/right.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.center-text-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  padding-bottom: 5rem;
+  flex-direction: column;
+
+  span {
+    text-transform: uppercase;
+    letter-spacing: 1.68px;
+    font-size: 2rem;
+  }
+
+  span.first-name {
+    font-weight: 900;
+    color: $color-gold;
+    margin-right: 1rem;
+  }
+
+  span.last-name {
+    color: $color-gold;
+  }
+
+  span.ex {
+    font-weight: 900;
+    color: #fff;
+    margin-right: 1rem;
+  }
+
+  span.phys {
+    color: #fff;
+  }
+
+  div.gold-separator {
+    background-color: $color-gold;
+    height: 0.2rem;
+    width: 10rem;
+    margin: 0.5rem 0;
+  }
+
+  div.message-container {
+    width: 50%;
+    text-align: center;
+  }
+
+  span.message {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: none;
+    text-align: center;
+  }
+}
+
+.back-to-basics-slide {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: url("../images/slides/home/back_to_basics.png");
+  background-size: cover;
+
+  > div {
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .hero-text {
+    color: $color-gold;
+    font-size: 7rem;
+    font-family: flood-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 5.36px;
+  }
+
+  .hero-sub-text {
+    font-family: Roboto;
+    font-size: 3rem;
+    color: $color-gold;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.84px;
+    font-weight: 900;
+    margin-top: -1rem;
+  }
+
+  span.message {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 65%;
+  }
+
+  span.here-now {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 2rem;
+
+    :first-child {
+      margin-right: 0.5rem;
+    }
+
+    > .gold-text {
+      color: $color-gold;
+    }
+
+    > .white-text {
+      color: #fff;
+    }
+  }
+
+  div.description {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.gray-separator {
+    background-color: $color-gray;
+    height: 0.2rem;
+    width: 10rem;
+    margin: 2.5rem 0;
+  }
+}

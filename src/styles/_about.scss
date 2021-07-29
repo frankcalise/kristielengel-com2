@@ -48,33 +48,3 @@
   height: 80vh;
   position: relative;
 }
-
-.fold-bar {
-  background-color: #777777;
-  bottom: 0;
-  height: 50px;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
-.fold-container {
-  display: flex;
-  justify-content: center;
-}
-
-.fold-text {
-  color: white;
-  font-size: 30px;
-  font-weight: 600;
-  font-family: Roboto;
-  text-transform: uppercase;
-
-  @media (max-width: 576px) {
-    font-size: 15px;
-  }
-}
-
-.mr-xl {
-  margin-right: 100px;
-}
