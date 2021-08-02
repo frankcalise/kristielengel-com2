@@ -156,3 +156,135 @@
     margin: 2.5rem 0;
   }
 }
+
+.feature-container {
+  background-color: $color-gold;
+  height: 45rem;
+  margin-bottom: 40px;
+  opacity: 0.83;
+  width: 100%;
+  transition: all 200ms ease-in;
+  position: relative;
+  text-align: center;
+
+  span {
+    opacity: 0;
+    transition: all 200ms ease-in;
+  }
+
+  span.feature-hover-message {
+    visibility: hidden;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 1rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $color-gray;
+
+    span {
+      opacity: 1;
+    }
+
+    span.feature-hover-message {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      visibility: visible;
+      color: #fff;
+    }
+  }
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    color: #fff;
+    font-size: 5rem;
+    font-family: flood-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+}
+
+.feature.one,
+.feature.two {
+  background: url("../images/slides/home/feature-1.png");
+  background-size: cover;
+  height: 90%;
+  width: 100%;
+}
+
+.feature.three {
+  background: url("../images/slides/home/feature-3.png");
+  background-size: cover;
+  height: 90%;
+  width: 100%;
+}
+
+.feature.four {
+  background: url("../images/slides/home/feature-4.png");
+  background-size: cover;
+  height: 90%;
+  width: 100%;
+}
+
+.fitness-community-slide {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: url("../images/slides/home/kristie_head_on_pushup.png");
+  background-size: cover;
+  margin-top: -14vh;
+  justify-content: center;
+  align-items: flex-end;
+
+  span {
+    font-size: 4rem;
+    font-family: flood-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0;
+  }
+}
+
+.testimonials-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: url("../images/slides/home/testimonial_background.png");
+  background-size: cover;
+  justify-content: center;
+  padding-top: 5rem;
+
+  .by-the-people {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: $color-gray;
+    padding: 0.5rem 3rem;
+    text-transform: uppercase;
+  }
+}

@@ -72,6 +72,65 @@ const Home: React.FC<Props> = () => {
           </div>
         </div>
       </Slide>
+
+      <Slide>
+        <div style={{ display: "flex", height: "100%" }}>
+          <div className="feature-container">
+            <div className="feature one">
+              <span>50+ workout videos on demand</span>
+            </div>
+            <span className="feature-hover-message">
+              <a href="/signup">
+                <strong>member features</strong> - learn more
+              </a>
+            </span>
+          </div>
+          <div className="feature-container">
+            <div className="feature two">
+              <span>50+ workout videos on demand</span>
+            </div>
+            <span className="feature-hover-message">
+              <a href="/signup">
+                <strong>member features</strong> - learn more
+              </a>
+            </span>
+          </div>
+          <div className="feature-container">
+            <div className="feature three">
+              <span>50+ workout videos on demand</span>
+            </div>
+            <span className="feature-hover-message">
+              <a href="/signup">
+                <strong>member features</strong> - learn more
+              </a>
+            </span>
+          </div>
+          <div className="feature-container">
+            <div className="feature four">
+              <span>50+ workout videos on demand</span>
+            </div>
+            <span className="feature-hover-message">
+              <a href="/signup">
+                <strong>member features</strong> - learn more
+              </a>
+            </span>
+          </div>
+        </div>
+      </Slide>
+
+      <Slide>
+        <div className="fitness-community-slide">
+          <span>a fitness community fueled by #balance</span>
+        </div>
+      </Slide>
+
+      <Slide>
+        <div className="testimonials-container">
+          <div>
+            <span className="by-the-people">by the people</span>
+          </div>
+        </div>
+      </Slide>
     </div>
   );
 };
