@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, navigate } from "gatsby";
 import Slide from "../Slide/Slide";
+import { SocialMediaSlide } from "../SocialMediaSlide/SocialMediaSlide";
 
 interface Props {}
 
@@ -131,6 +132,8 @@ const Home: React.FC<Props> = () => {
           </div>
         </div>
       </Slide>
+
+      <SocialMediaSlide />
     </div>
   );
 };

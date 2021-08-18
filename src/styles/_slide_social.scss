@@ -1,0 +1,49 @@
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: url("../images/slides/home/testimonial_background.png");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+
+  .instructions {
+    text-align: center;
+    padding-bottom: 5rem;
+
+    & span {
+      font-family: Roboto;
+      font-size: 3rem;
+    }
+    span.title {
+      text-transform: uppercase;
+    }
+    .gold {
+      color: $color-gold;
+    }
+    .gray {
+      color: $color-light-gray;
+    }
+
+    span.description {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  }
+
+  .image-container {
+    background-color: #fff;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .image {
+    background-color: #000;
+    margin-bottom: 1.5rem;
+    height: 10rem;
+    width: 10rem;
+  }
+}
