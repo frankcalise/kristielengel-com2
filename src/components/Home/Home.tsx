@@ -13,7 +13,7 @@ const Home: React.FC<Props> = () => {
         foldBarText={
           <>
             <span className="fold-text mr-xl">
-              changing lives on a daily basis!
+              Helping women all over the world find a healthy #BALANCE
             </span>
             <span className="fold-text">
               <Link to="/signup">sign up</Link>
@@ -37,7 +37,8 @@ const Home: React.FC<Props> = () => {
               <div className="gold-separator" />
               <div className="message-container">
                 <span className="message">
-                  Delivering weekly workouts for the busy individual...
+                  Delivering convenient workouts and #balanced nutrition advice
+                  for busy women!
                 </span>
               </div>
             </div>
@@ -48,16 +49,29 @@ const Home: React.FC<Props> = () => {
 
       <Slide>
         <div className="back-to-basics-slide">
-          <div>{/* move plays here */}</div>
+          <div className="video-frame">
+            <iframe
+              src="https://player.vimeo.com/video/588480092?h=226e972b63"
+              width="720"
+              height="480"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
           <div>
             <div className="description">
               <span className="hero-text">Back to BaSix</span>
               <span className="hero-sub-text">stop starting over!</span>
               <div className="gray-separator" />
               <span className="message">
-                <strong>Kristielengel.com</strong> delivers weekly workouts for
-                the busy individual looking to stay healthy in a "balanced" way!
-                Minimal space, time and equipment are needed to...
+                To kick start your new #balanced lifestyle, your membership
+                includes my 6 step “healthy habit formation” program called
+                “Back to BaSIX”! Each week, you’ll commit to one new healthy
+                habit. Once it becomes routine, you’ll level up to my next
+                habit! We’ll slowly build up 6 new habits so you NEVER feel
+                overwhelmed or deprived! You’ll get the results you want, and be
+                hungry for more!
               </span>
               <span className="here-now">
                 <span className="gold-text">right here.</span>
@@ -65,9 +79,9 @@ const Home: React.FC<Props> = () => {
               </span>
               <button
                 className="gold-button"
-                onClick={() => navigate("/signup")}
+                onClick={() => navigate("/back-to-basix")}
               >
-                learn more & sign up
+                learn more
               </button>
             </div>
           </div>
