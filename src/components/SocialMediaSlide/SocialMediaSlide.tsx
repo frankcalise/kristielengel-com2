@@ -27,43 +27,43 @@ const SocialMediaSlide: React.FC<Props> = () => {
           <Container className="image-container">
             <Row>
               <Col md={2}>
-                <div className="image" />
+                <div className="image image-1" />
               </Col>
               <Col md={2}>
-                <div className="image" />
+                <div className="image image-2" />
               </Col>
               <Col md={2}>
-                <div className="image" />
+                <div className="image image-3" />
               </Col>
               <Col md={2}>
-                <div className="image" />
+                <div className="image image-4" />
               </Col>
               <Col md={2}>
-                <div className="image" />
+                <div className="image image-5" />
               </Col>
               <Col md={2}>
-                <div className="image" />
+                <div className="image image-6" />
               </Col>
             </Row>
 
             <Row>
               <Col md={2}>
-                <div className="image" />
+                <div className="image image-7" />
               </Col>
               <Col md={2}>
-                <div className="image" />
+                <div className="image image-8" />
               </Col>
               <Col md={2}>
-                <div className="image" />
+                <div className="image image-9" />
               </Col>
               <Col md={2}>
-                <div className="image" />
+                <div className="image image-10" />
               </Col>
               <Col md={2}>
-                <div className="image" />
+                <div className="image image-11" />
               </Col>
               <Col md={2}>
-                <div className="image" />
+                <div className="image image-12" />
               </Col>
             </Row>
           </Container>
