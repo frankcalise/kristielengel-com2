@@ -2,13 +2,20 @@ import React from "react";
 import Classnames from "classnames";
 
 interface Props {
-  foldBarColor?: "gold" | "gray";
+  foldBarColor?: "black" | "gold" | "gray";
   foldBarText?: React.ReactNode;
+  short?: boolean;
 }
 
-const Slide: React.FC<Props> = ({ children, foldBarText, foldBarColor }) => {
+const Slide: React.FC<Props> = ({
+  children,
+  foldBarText,
+  foldBarColor,
+  short = false,
+}) => {
+  console.log({ short, classnames: Classnames("slide-content", short) });
   return (
-    <div className="slide-content">
+    <div className={`slide-content${short ? " short" : ""}`}>
       {children}
       {/* fold bar */}
 

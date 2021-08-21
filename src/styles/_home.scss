@@ -170,57 +170,12 @@
 
 .feature-container {
   background-color: $color-gold;
-  height: 45rem;
-  margin-bottom: 40px;
+  height: 40rem;
   opacity: 0.83;
   width: 100%;
   transition: all 200ms ease-in;
   position: relative;
   text-align: center;
-
-  span {
-    opacity: 0;
-    transition: all 200ms ease-in;
-  }
-
-  span.feature-hover-message {
-    visibility: hidden;
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 100%;
-    text-transform: uppercase;
-    font-family: Roboto;
-    font-size: 1rem;
-
-    a {
-      color: #fff;
-      text-decoration: none;
-      &:hover {
-        text-decoration: none;
-        color: #fff;
-      }
-    }
-  }
-
-  &:hover {
-    background-color: $color-gray;
-
-    span {
-      opacity: 1;
-    }
-
-    span.feature-hover-message {
-      position: absolute;
-      bottom: 1.5rem;
-      left: 50%;
-      transform: translate(-50%, 0);
-      width: 100%;
-      visibility: visible;
-      color: #fff;
-    }
-  }
 }
 
 .feature {
@@ -230,34 +185,71 @@
 
   span {
     color: #fff;
-    font-size: 5rem;
-    font-family: flood-std, sans-serif;
-    font-weight: 400;
+    font-size: 2rem;
+    font-family: Roboto;
+    font-weight: 600;
     font-style: normal;
+    opacity: 0.8;
+    padding: 2rem;
     text-align: center;
+    text-transform: uppercase;
+    width: 100%;
   }
 }
 
-.feature.one,
-.feature.two {
+.feature.one {
   background: url("../images/slides/home/feature-1.png");
   background-size: cover;
-  height: 90%;
+  height: 100%;
   width: 100%;
+
+  span {
+    background-color: $color-gold;
+  }
+}
+
+.feature.two {
+  background: url("../images/slides/home/feature-2.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  span {
+    background-color: $color-gray;
+  }
 }
 
 .feature.three {
   background: url("../images/slides/home/feature-3.png");
   background-size: cover;
-  height: 90%;
+  height: 100%;
   width: 100%;
+
+  span {
+    background-color: $color-gold;
+  }
 }
 
 .feature.four {
   background: url("../images/slides/home/feature-4.png");
   background-size: cover;
-  height: 90%;
+  height: 100%;
   width: 100%;
+
+  span {
+    background-color: $color-gray;
+  }
+}
+
+.feature.five {
+  background: url("../images/slides/home/feature-5.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  span {
+    background-color: $color-gold;
+  }
 }
 
 .fitness-community-slide {
@@ -266,7 +258,6 @@
   width: 100%;
   background: url("../images/slides/home/kristie_head_on_pushup.png");
   background-size: cover;
-  margin-top: -14vh;
   justify-content: center;
   align-items: flex-end;
 

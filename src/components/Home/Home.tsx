@@ -88,47 +88,37 @@ const Home: React.FC<Props> = () => {
         </div>
       </Slide>
 
-      <Slide>
+      <Slide short={true} foldBarColor="gold">
         <div style={{ display: "flex", height: "100%" }}>
           <div className="feature-container">
             <div className="feature one">
-              <span>50+ workout videos on demand</span>
+              <span>5 new workouts every week</span>
             </div>
-            <span className="feature-hover-message">
-              <a href="/signup">
-                <strong>member features</strong> - learn more
-              </a>
-            </span>
+            <span className="feature-hover-message"></span>
           </div>
           <div className="feature-container">
             <div className="feature two">
-              <span>50+ workout videos on demand</span>
+              <span>30+ workout videos on demand!</span>
             </div>
-            <span className="feature-hover-message">
-              <a href="/signup">
-                <strong>member features</strong> - learn more
-              </a>
-            </span>
           </div>
           <div className="feature-container">
             <div className="feature three">
-              <span>50+ workout videos on demand</span>
+              <span>recipes & nutrition support</span>
             </div>
-            <span className="feature-hover-message">
-              <a href="/signup">
-                <strong>member features</strong> - learn more
-              </a>
-            </span>
           </div>
           <div className="feature-container">
             <div className="feature four">
-              <span>50+ workout videos on demand</span>
+              <span>
+                community
+                <br />
+                support
+              </span>
             </div>
-            <span className="feature-hover-message">
-              <a href="/signup">
-                <strong>member features</strong> - learn more
-              </a>
-            </span>
+          </div>
+          <div className="feature-container">
+            <div className="feature five">
+              <span>individual online meetings</span>
+            </div>
           </div>
         </div>
       </Slide>
